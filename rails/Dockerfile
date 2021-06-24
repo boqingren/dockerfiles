@@ -2,7 +2,7 @@ FROM ruby:latest
 
 LABEL multi.maintainer="Jun" \
       multi.email="boqingren@hotmail.com" \
-      multi.repository="https://github.com/boqingren/rails-image.git" \
+      multi.repository="https://github.com/boqingren/dockerfiles/tree/main/rails" \
       multi.description="本镜像仅用于学习，不保证生产上线的质量！"
 
 # 设置工作目录，如果不存在则会创建
@@ -28,4 +28,4 @@ CMD /bin/zsh
 ENTRYPOINT /bin/zsh
 
 # 镜像对外暴露的端口
-EXPOSE 8080
+EXPOSE 3000
