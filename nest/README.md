@@ -2,8 +2,8 @@
 
 
     // 1. 启动容器
-    docker run -it --rm --name mynest -p 3000:3000 boqingren/nest:1.0.0
-    docker run -it --rm --name mynest -p 3000:3000 -v /Users/jun/Workspace/Front-End/Node/Nest:/root/workspace boqingren/nest:1.0.0
+    docker run -it --rm --name mynest -p 3000:3000 boqingren/nest:1.0.1
+    docker run -it --rm --name mynest -p 3000:3000 -v /Users/jun/Workspace/Front-End/Node/Nest:/root/workspace boqingren/nest:1.0.1
 
     // 2. 在容器里面起一个 nest 的 blog 应用，参考：https://nestjs.bootcss.com/first-steps
     cd /root/workspace && nest new blog && cd ./blog && yarn start
@@ -11,12 +11,12 @@
     // 3. 进入正在运行的容器
     docker exec -it mynest /bin/zsh
 
-    // 4. 打包一个镜像，示例：docker build -t boqingren/nest:1.0.0 ./
+    // 4. 打包一个镜像，示例：docker build -t boqingren/nest:1.0.1 ./
     docker build -t [PATH]/[TITLE]:[VERSIONS] ./
 
     // 5. 其他命令
     docker images                     // 查看镜像列表
-    docker rmi boqingren/nest:1.0.0   // 删除某个镜像
+    docker rmi boqingren/nest:1.0.1   // 删除某个镜像
     docker ps                         // 查看容器列表
     docker rm -f mynest               // 删除某个容器
 
