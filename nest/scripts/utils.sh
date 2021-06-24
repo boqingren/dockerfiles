@@ -21,8 +21,8 @@ echo -e "\033[36m 3. 正在安装 net-tools: apt-get install -y net-tools \033[0
 && apt-get install -y zsh \
 && echo -e "\033[36m 7. 正在切换默认 shell 到 zsh: chsh -s /bin/zsh \033[0m" \
 && chsh -s /bin/zsh \
-&& echo -e "\033[36m 8. 正在安装 oh my zsh: bash /root/workspace/bootstrap/libs/ohmyzsh/tools/install.sh \033[0m" \
-&& bash /root/workspace/bootstrap/libs/ohmyzsh/tools/install.sh &
+&& echo -e "\033[36m 8. 正在安装 oh my zsh: bash /root/workspace/bootstrap/scripts/omz.sh \033[0m" \
+&& bash /root/workspace/bootstrap/scripts/omz.sh &
 
 wait $! \
 && echo -e "\033[32m ifconfig/tree/vim/zsh 安装成功 \033[0m" \

@@ -29,4 +29,4 @@
 
 # Oh My Zsh 及插件安装注意事项
 1. 参考[《Oh My Zsh，让你的终端从未这么爽过》](https://cloud.tencent.com/developer/article/1152727)。
-3. Oh My Zsh 的 GitHub 仓库已更新，`https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh` 已经失效了，我把 Oh My Zsh 的 GitHub 仓库下载下载了，并将其放在了 `libs` 目录下，真正发挥作用的脚本是 `/libs/ohmyzsh/tools/install.sh`。当然，你也可以根据这个路径去下载 `https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh`，截止 2012 年 6 22 日为止，这个链接是有效的。
+2. Oh My Zsh 的 GitHub 仓库已更新，`https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh` 已经失效了，新的链接是 `https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh`，我已经把新链接的文件下载并重命名为 `omz.sh` 放在了 `rails/scripts/` 目录下，截止 2012 年 6 月 24 日为止，这个新的链接是有效的。
