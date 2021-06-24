@@ -1,10 +1,10 @@
 # 一个用于学习 Ruby 和 Rails 的 Dockerfile
-镜像的 DockerHub [https://hub.docker.com/r/boqingren/rails](https://hub.docker.com/r/boqingren/rails)，下载方式：`docker pull boqingren/rails:1.0.0`。
+镜像的 DockerHub [https://hub.docker.com/r/boqingren/rails](https://hub.docker.com/r/boqingren/rails)，下载方式：`docker pull boqingren/rails:1.0.1`。
 
 
     // 1. 启动容器
-    docker run -it --rm --name myrails -p 3000:3000 boqingren/rails:1.0.0
-    docker run -it --rm --name myrails -p 3000:3000 -v /Users/jun/Workspace/Ruby/Rails:/root/workspace boqingren/rails:1.0.0
+    docker run -it --rm --name myrails -p 3000:3000 boqingren/rails:1.0.1
+    docker run -it --rm --name myrails -p 3000:3000 -v /Users/jun/Workspace/Ruby/Rails:/root/workspace boqingren/rails:1.0.1
 
     // 2. 在容器里面起一个 rails 的 blog 应用，参考：https://guides.rubyonrails.org/getting_started.html#installing-ruby
     cd /root/workspace && rails new blog && cd ./blog && bin/rails server -b 0.0.0.0 -p 3000
@@ -12,12 +12,12 @@
     // 3. 进入正在运行的容器
     docker exec -it myrails /bin/zsh
 
-    // 4. 打包一个镜像，示例：docker build -t boqingren/rails:1.0.0 ./
+    // 4. 打包一个镜像，示例：docker build -t boqingren/rails:1.0.1 ./
     docker build -t [PATH]/[TITLE]:[VERSIONS] ./
 
     // 5. 其他命令
     docker images                     // 查看镜像列表
-    docker rmi boqingren/rails:1.0.0  // 删除某个镜像
+    docker rmi boqingren/rails:1.0.1  // 删除某个镜像
     docker ps                         // 查看容器列表
     docker rm -f myrails              // 删除某个容器
 

@@ -25,11 +25,6 @@ echo -e "\033[36m 3. 正在安装 net-tools: apt-get install -y net-tools \033[0
 && bash /root/workspace/bootstrap/libs/ohmyzsh/tools/install.sh &
 
 wait $! \
-&& echo -e "\033[36m 9. 正在安装 zsh 插件 incr-0.2.zsh \033[0m" \
-&& echo "source /root/.oh-my-zsh/plugins/incr.zsh" >> /root/.zshrc \
-&& cp -rf /root/workspace/bootstrap/libs/incr.zsh /root/.oh-my-zsh/plugins/incr.zsh \
-&& /bin/zsh -c "source ~/.zshrc" \
-&& rm -rf /root/.zcompdump* \
 && echo -e "\033[32m ifconfig/tree/vim/zsh 安装成功 \033[0m" \
 && echo -e "\033[32m ifconfig --version: \033[0m" $(ifconfig --version) \
 && echo -e "\033[32m tree --version: \033[0m" $(tree --version) \
