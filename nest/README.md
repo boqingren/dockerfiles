@@ -1,4 +1,5 @@
 # 一个用于学习 NodeJS 和 NestJS 的 Dockerfile
+镜像的 DockerHub [https://hub.docker.com/r/boqingren/nest](https://hub.docker.com/r/boqingren/nest)，下载方式：`docker pull boqingren/nest:1.0.1`。
 
 
     // 1. 启动容器
