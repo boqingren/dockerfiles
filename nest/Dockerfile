@@ -27,4 +27,4 @@ CMD /bin/zsh
 ENTRYPOINT /bin/zsh
 
 # 镜像对外暴露的端口
-EXPOSE 8080
+EXPOSE 3000

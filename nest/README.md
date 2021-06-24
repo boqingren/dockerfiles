@@ -6,7 +6,7 @@
     docker run -it --rm --name mynest -p 8080:8080 -v /Users/jun/Workspace/Front-End/Node/Nest:/root/workspace boqingren/nest:1.0.0
 
     // 2. 在容器里面起一个 nest 的 blog 应用，参考：https://nestjs.bootcss.com/first-steps
-    cd /root/workspace && nest new blog && cd ./blog && bin/nest server -b 0.0.0.0 -p 8080
+    cd /root/workspace && nest new blog && cd ./blog && yarn start
 
     // 3. 进入正在运行的容器
     docker exec -it mynest /bin/zsh
@@ -16,9 +16,9 @@
 
     // 5. 其他命令
     docker images                     // 查看镜像列表
-    docker rmi boqingren/nest:1.0.0  // 删除某个镜像
+    docker rmi boqingren/nest:1.0.0   // 删除某个镜像
     docker ps                         // 查看容器列表
-    docker rm -f mynest              // 删除某个容器
+    docker rm -f mynest               // 删除某个容器
 
 # 镜像里安装了一些工具，如果不需要可以自己在 Dockerfile 里面去掉
     ...
@@ -28,5 +28,4 @@
 
 # Oh My Zsh 及插件安装注意事项
 1. 参考[《Oh My Zsh，让你的终端从未这么爽过》](https://cloud.tencent.com/developer/article/1152727)。
-2. 由于大陆访问受限的原因，`http://mimosa-pudica.net/src/incr-0.2.zsh` 基本不可访问，我把 `incr-0.2.zsh` 下载下来后重名为 `incr.zsh`，并将其放在了本仓库的 `libs` 目录下。
-3. Oh My Zsh 的 GitHub 仓库已更新，`https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh` 已经失效了，我把 Oh My Zsh 的 GitHub 仓库下载下载了，并将其放在了 `libs` 目录下，真正发挥作用的脚本是 `/libs/ohmyzsh/tools/install.sh`。当然，你也可以根据这个路径去下载 `https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh`，截止 2012 年 6 22 日为止，这个链接是有效的。
+2. Oh My Zsh 的 GitHub 仓库已更新，`https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh` 已经失效了，我把 Oh My Zsh 的 GitHub 仓库下载下载了，并将其放在了 `libs` 目录下，真正发挥作用的脚本是 `/libs/ohmyzsh/tools/install.sh`。当然，你也可以根据这个路径去下载 `https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh`，截止 2012 年 6 22 日为止，这个链接是有效的。

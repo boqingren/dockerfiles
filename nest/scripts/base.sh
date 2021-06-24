@@ -41,7 +41,9 @@ echo -e "\033[36m 5. 正在清除 apt-get 缓存: apt-get clean \033[0m" \
 && npm update -g yarn \
 && echo -e "\033[36m 11. 正在设置 yarn taobao 源: yarn config set registry https://registry.npm.taobao.org/ \033[0m" \
 && yarn config set registry https://registry.npm.taobao.org/ \
-&& echo -e "\033[36m 12. 正在安装 yarn：yarn global add @nestjs/cli \033[0m" \
+&& echo -e "\033[36m 12. 正在更新 npm：yarn global add npm \033[0m" \
+&& yarn global add npm \
+&& echo -e "\033[36m 13. 正在安装 yarn：yarn global add @nestjs/cli \033[0m" \
 && yarn global add @nestjs/cli \
 && echo -e "\033[32m node --version: \033[0m" $(node --version) \
 && echo -e "\033[32m yarn --version: \033[0m" $(yarn --version) \
