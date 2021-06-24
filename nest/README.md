@@ -2,8 +2,8 @@
 
 
     // 1. 启动容器
-    docker run -it --rm --name mynest -p 8080:8080 boqingren/nest:1.0.0
-    docker run -it --rm --name mynest -p 8080:8080 -v /Users/jun/Workspace/Front-End/Node/Nest:/root/workspace boqingren/nest:1.0.0
+    docker run -it --rm --name mynest -p 3000:3000 boqingren/nest:1.0.0
+    docker run -it --rm --name mynest -p 3000:3000 -v /Users/jun/Workspace/Front-End/Node/Nest:/root/workspace boqingren/nest:1.0.0
 
     // 2. 在容器里面起一个 nest 的 blog 应用，参考：https://nestjs.bootcss.com/first-steps
     cd /root/workspace && nest new blog && cd ./blog && yarn start
